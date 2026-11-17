@@ -1,0 +1,27 @@
+{
+  "name": "playwright-qa-framework",
+  "version": "1.1.0",
+  "description": "Professional Playwright QA Framework with UI and API automation examples",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test tests/ui",
+    "test:api": "npx playwright test tests/api",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "qa",
+    "automation",
+    "testing",
+    "typescript",
+    "page-object-model"
+  ],
+  "author": "Panida Banyen",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^24.0.0",
+    "dotenv": "^16.4.5"
+  }
+}
