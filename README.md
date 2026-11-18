@@ -28,7 +28,7 @@ Professional Playwright QA Framework with UI Testing, API Testing, Page Object M
 
 * HTML Report
 * Screenshots
-* Video Recording
+* Video Recording (CI only, on the first retry of a failed test)
 * Trace Viewer
 
 ---
@@ -221,13 +221,21 @@ screenshot: 'on'
 
 # 🎥 Video Recording
 
-Videos are generated when test retries occur.
+A video is recorded only when a failed test is retried, so in practice videos appear in CI runs only.
 
 Configuration:
 
 ```ts
+retries: CI ? 2 : 0,
 video: 'on-first-retry'
 ```
+
+| Where | Retries | Video |
+|---|---|---|
+| Local run | 0 | No video |
+| CI (`CI=true`) | 2 | Video of the first retry of a failed test |
+
+For local debugging, use the Trace Viewer instead (`trace: 'on'` records every action).
 
 ---
 
