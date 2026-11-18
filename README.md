@@ -28,7 +28,6 @@ Professional Playwright QA Framework with UI Testing, API Testing, Page Object M
 
 * HTML Report
 * Screenshots
-* Video Recording (CI only, on the first retry of a failed test)
 * Trace Viewer
 
 ---
@@ -219,9 +218,6 @@ screenshot: 'on'
 
 ---
 
-# 🎥 Video Recording
-
-A video is recorded only when a failed test is retried, so in practice videos appear in CI runs only.
 
 Configuration:
 
@@ -318,8 +314,6 @@ Included:
 ✅ HTML Report
 
 ✅ Screenshot
-
-✅ Video
 
 ✅ Trace
 
