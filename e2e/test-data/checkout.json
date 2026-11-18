@@ -1,0 +1,21 @@
+{
+  "_readme": {
+    "EN": [
+      "products[]: items bought in the happy path (CO01) — prices and totals are read from the page at runtime",
+      "customer: values typed in the checkout form",
+      "requiredFields[]: one row = one validation test — that field is left empty, the rest come from customer",
+      "completeMessage: header on the thank-you page"
+    ]
+  },
+  "products": [
+    { "id": "sauce-labs-backpack", "name": "Sauce Labs Backpack" },
+    { "id": "sauce-labs-fleece-jacket", "name": "Sauce Labs Fleece Jacket" }
+  ],
+  "customer": { "firstName": "Panida", "lastName": "Banyen", "postalCode": "10110" },
+  "requiredFields": [
+    { "tsn": "CO02", "field": "firstName", "error": "First Name is required" },
+    { "tsn": "CO03", "field": "lastName", "error": "Last Name is required" },
+    { "tsn": "CO04", "field": "postalCode", "error": "Postal Code is required" }
+  ],
+  "completeMessage": "Thank you for your order!"
+}

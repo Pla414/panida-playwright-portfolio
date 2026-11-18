@@ -1,0 +1,15 @@
+{
+  "_readme": {
+    "EN": [
+      "productCount: number of products the catalog must show (IN01)",
+      "sortCases[]: one row = one sort test — option is the dropdown value, by = name | price, order = asc | desc"
+    ]
+  },
+  "productCount": 6,
+  "sortCases": [
+    { "tsn": "IN02", "option": "az", "label": "Name (A to Z)", "by": "name", "order": "asc" },
+    { "tsn": "IN03", "option": "za", "label": "Name (Z to A)", "by": "name", "order": "desc" },
+    { "tsn": "IN04", "option": "lohi", "label": "Price (low to high)", "by": "price", "order": "asc" },
+    { "tsn": "IN05", "option": "hilo", "label": "Price (high to low)", "by": "price", "order": "desc" }
+  ]
+}

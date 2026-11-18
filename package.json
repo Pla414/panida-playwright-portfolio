@@ -3,11 +3,25 @@
   "version": "1.1.0",
   "description": "Professional Playwright QA Framework with UI and API automation examples",
   "scripts": {
-    "test": "npx playwright test",
-    "test:ui": "npx playwright test tests/ui",
-    "test:api": "npx playwright test tests/api",
-    "test:headed": "npx playwright test --headed",
-    "report": "npx playwright show-report"
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:ui": "playwright test --ui",
+    "test:setup": "playwright test --project=setup",
+    "test:ui": "playwright test e2e/ui",
+    "test:ui:headed": "playwright test e2e/ui --headed",
+    "test:login": "playwright test e2e/ui/login.spec.ts",
+    "test:login:headed": "playwright test e2e/ui/login.spec.ts --headed",
+    "test:inventory": "playwright test e2e/ui/inventory.spec.ts",
+    "test:inventory:headed": "playwright test e2e/ui/inventory.spec.ts --headed",
+    "test:cart": "playwright test e2e/ui/cart.spec.ts",
+    "test:cart:headed": "playwright test e2e/ui/cart.spec.ts --headed",
+    "test:checkout": "playwright test e2e/ui/checkout.spec.ts",
+    "test:checkout:headed": "playwright test e2e/ui/checkout.spec.ts --headed",
+    "test:journey": "playwright test e2e/ui/user-journey.spec.ts",
+    "test:journey:headed": "playwright test e2e/ui/user-journey.spec.ts --headed",
+    "test:api": "playwright test e2e/api-tests",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
   },
   "keywords": [
     "playwright",
@@ -22,6 +36,8 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^24.0.0",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "jszip": "^3.10.2",
+    "typescript": "^5.9.3"
   }
 }

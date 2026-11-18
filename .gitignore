@@ -1,9 +1,15 @@
 node_modules/
 playwright-report/
 test-results/
-.env
-.DS_Store
 reports/*
-screenshots/*
 !reports/.gitkeep
-!screenshots/.gitkeep
+
+# local env (copy from e2e/.env.example)
+e2e/.env
+.env
+
+# saved login sessions (recreate with: npm run test:setup)
+.auth/
+
+# macOS
+.DS_Store

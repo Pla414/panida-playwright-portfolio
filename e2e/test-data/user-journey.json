@@ -1,0 +1,28 @@
+{
+  "_readme": {
+    "EN": [
+      "customer: values typed in the checkout form",
+      "cheapestCount: how many of the cheapest products UJ01 buys (picked from the page after sorting)",
+      "editCart: UJ02 — products added first, the one removed in the cart, and the one added after Continue Shopping",
+      "recovery: UJ03 — the wrong password typed first and the product bought",
+      "Error messages and the thank-you text the journeys expect"
+    ]
+  },
+  "customer": { "firstName": "Panida", "lastName": "Banyen", "postalCode": "10110" },
+  "cheapestCount": 2,
+  "editCart": {
+    "initial": ["Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Bolt T-Shirt"],
+    "remove": "Sauce Labs Bike Light",
+    "addLater": "Sauce Labs Onesie"
+  },
+  "recovery": {
+    "wrongPassword": "wrong_password",
+    "product": "Sauce Labs Fleece Jacket"
+  },
+  "messages": {
+    "wrongPassword": "Username and password do not match any user in this service",
+    "postalCodeRequired": "Postal Code is required",
+    "guardedPage": "You can only access '/inventory.html' when you are logged in.",
+    "complete": "Thank you for your order!"
+  }
+}

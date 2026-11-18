@@ -1,0 +1,15 @@
+{
+  "_readme": {
+    "EN": [
+      "existingUserId: user that exists in JSONPlaceholder (US02, US05, US06)",
+      "missingUserId: id that does not exist → 404 (US03)",
+      "newUser: body for POST /users (US04) / updatedUser: body for PUT /users/:id (US05) — the API echoes them back",
+      "requiredFields: keys every user object must have"
+    ]
+  },
+  "existingUserId": 1,
+  "missingUserId": 9999,
+  "newUser": { "name": "Panida", "job": "QA Automation Engineer" },
+  "updatedUser": { "name": "Panida B.", "job": "Senior QA Automation Engineer" },
+  "requiredFields": ["id", "name", "username", "email"]
+}

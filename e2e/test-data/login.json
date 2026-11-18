@@ -1,0 +1,38 @@
+{
+  "_readme": {
+    "EN": [
+      "Valid / locked-out accounts come from e2e/auth/roles.ts (ROLES.*) and e2e/.env — no real passwords here",
+      "lockedOutError: message for the locked-out account (LG02)",
+      "invalidCredentials[]: one row = one negative test (tsn, title, typed username / password, expected error)",
+      "guardedPage: page opened without logging in (LG06) and the error it must show"
+    ]
+  },
+  "lockedOutError": "Sorry, this user has been locked out.",
+  "invalidCredentials": [
+    {
+      "tsn": "LG03",
+      "title": "wrong password is rejected",
+      "username": "standard_user",
+      "password": "wrong_password",
+      "error": "Username and password do not match any user in this service"
+    },
+    {
+      "tsn": "LG04",
+      "title": "empty username is required",
+      "username": "",
+      "password": "any_password",
+      "error": "Username is required"
+    },
+    {
+      "tsn": "LG05",
+      "title": "empty password is required",
+      "username": "standard_user",
+      "password": "",
+      "error": "Password is required"
+    }
+  ],
+  "guardedPage": {
+    "path": "/inventory.html",
+    "error": "You can only access '/inventory.html' when you are logged in."
+  }
+}
